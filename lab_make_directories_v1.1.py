@@ -34,10 +34,11 @@ import os
 
 base_dir = input('Enter location to save directory (e.g. C:\\Users\\christopher\\Desktop): ')
 collection_code = input('Enter collection code (e.g. ttu_pressr): ')
-item_number = input('Enter first item number (e.g. 000001): ')
-number_of_items = int(input('Enter number of item folders needed: '))
+item_number = input('Enter first item number (e.g. 1): ')
+number_of_items = int(input('Enter number of item folders needed (e.g. 100): '))
 
 collection_folder = os.path.join(base_dir, collection_code)
+item_number = str(item_number).zfill(6)
 
 if os.path.isdir(collection_folder):
     pass

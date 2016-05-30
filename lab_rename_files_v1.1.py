@@ -26,6 +26,13 @@ The item_folder should have the following structure:
 
 The six digit number is a unique item number for each item in the collections.
 
+File names are created based on the following structure:
+
+    ttu_pressr_000001_000001
+
+The last six-digit number is used for .jpg and .tif files. For .pdf files,
+the last six digits and preceding underscore are not used.
+
 Archive and raw folders must contain .tif files. Display folders may contain
 multiple .jpg files and/or a single .pdf file.
 
